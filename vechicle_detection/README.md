@@ -47,6 +47,15 @@ The dataset is organized in YOLO format with:
 ### Prediction Example
 ![Prediction](assets/v1_prediction.jpg)
 
+## Experiment Comparison
+
+| Version | Model | Epochs | Precision | Recall | mAP50 | mAP50-95 |
+|---|---|---:|---:|---:|---:|---:|
+| v1 | YOLOv8n | 20 | 0.551 | 0.478 | 0.492 | 0.311 |
+| v2 | YOLOv8n | 50 | 0.795 | 0.563 | 0.655 | 0.419 |
+
+Training for more epochs led to a substantial improvement in overall detection performance, especially in mAP50 and mAP50-95.
+
 ## Current Progress
 - [x] Dataset prepared
 - [x] YOLOv8n baseline trained for 20 epochs
