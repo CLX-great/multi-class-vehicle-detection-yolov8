@@ -2,7 +2,7 @@
 __pycache__/
 *.pyc
 
-# dataset
+# datasets
 Vehicles_Detection.v8i.yolov8/
 Vehicles_Detection.v9i.yolov8/
 Apply_Grayscale/
@@ -13,3 +13,7 @@ runs/
 
 # model weights
 *.pt
+
+# demo videos
+videos/
+outputs/

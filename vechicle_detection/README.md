@@ -2,6 +2,8 @@
 
 This project explores multi-class vehicle detection in traffic scenes using YOLOv8.
 
+
+
 ## Vehicle Categories
 - Bus
 - Car
@@ -21,6 +23,16 @@ The dataset is organized in YOLO format with:
 - valid
 - test
 - data.yaml
+## Repository Structure
+
+.
+├── assets/
+├── docs/
+├── predict_video.py
+├── train_vehicle.py
+├── requirements.txt
+└── README.md
+
 
 ## Baseline Results (YOLOv8n, 20 epochs)
 
@@ -94,12 +106,23 @@ Compared with the RGB 50-epoch setting, grayscale augmentation improved overall 
 The 50-epoch RGB experiment substantially improved performance over the 20-epoch baseline.  
 In addition, grayscale augmentation further improved recall, mAP50, and mAP50-95, suggesting that grayscale-based augmentation enhanced robustness in traffic-scene vehicle detection.
 
+## Video Inference Demo
 
+The best-performing model was further applied to traffic video inference to demonstrate frame-level vehicle detection performance in dynamic scenes.  
+This demo focuses on per-frame detection and visualization rather than multi-object tracking.
+
+### Demo Frame
+![Video Demo](assets/video_demo_frame.jpg)
+
+## Future Work
+- Compare additional YOLOv8 model variants such as YOLOv8s
+- Extend the pipeline from frame-level detection to vehicle tracking
+- Explore more robust augmentation and preprocessing strategies
+- Evaluate performance on more diverse traffic scenes
 
 ## Current Progress
 - [x] Dataset prepared
 - [x] YOLOv8n baseline trained for 20 epochs
 - [x] 50-epoch experiment
-- [ ] Model comparison
 - [x] Grayscale augmentation comparison
-- [ ] Video inference demo
+- [x] Video inference demo
