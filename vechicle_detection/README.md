@@ -56,6 +56,11 @@ The 50-epoch setting significantly improved overall performance compared with th
 - mAP50: 0.655
 - mAP50-95: 0.419
 
+### v2 Training Curve
+![Results](assets/v2_results.png)
+
+### v2 Confusion Matrix
+![Confusion Matrix](assets/v2_confusion_matrix.png)
 
 ## Experiment Comparison
 
@@ -66,11 +71,7 @@ The 50-epoch setting significantly improved overall performance compared with th
 
 Training for more epochs led to a substantial improvement in overall detection performance, especially in mAP50 and mAP50-95.
 
-### v2 Training Curve
-![Results](assets/v2_results.png)
 
-### v2 Confusion Matrix
-![Confusion Matrix](assets/v2_confusion_matrix.png)
 
 
 ## Current Progress
