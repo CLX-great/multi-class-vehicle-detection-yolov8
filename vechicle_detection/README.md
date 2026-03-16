@@ -47,6 +47,16 @@ The dataset is organized in YOLO format with:
 ### Prediction Example
 ![Prediction](assets/v1_prediction.jpg)
 
+## Improved Results (YOLOv8n, 50 epochs)
+
+The 50-epoch setting significantly improved overall performance compared with the 20-epoch baseline, especially in mAP50 and mAP50-95.
+
+- Precision: 0.795
+- Recall: 0.563
+- mAP50: 0.655
+- mAP50-95: 0.419
+
+
 ## Experiment Comparison
 
 | Version | Model | Epochs | Precision | Recall | mAP50 | mAP50-95 |
@@ -56,10 +66,17 @@ The dataset is organized in YOLO format with:
 
 Training for more epochs led to a substantial improvement in overall detection performance, especially in mAP50 and mAP50-95.
 
+### v2 Training Curve
+![Results](assets/v2_results.png)
+
+### v2 Confusion Matrix
+![Confusion Matrix](assets/v2_confusion_matrix.png)
+
+
 ## Current Progress
 - [x] Dataset prepared
 - [x] YOLOv8n baseline trained for 20 epochs
 - [x] 50-epoch experiment
-- [x] Model comparison
+- [ ] Model comparison
 - [ ] Grayscale vs RGB comparison
 - [ ] Video inference demo
