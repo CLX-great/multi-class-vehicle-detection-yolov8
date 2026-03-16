@@ -4,6 +4,7 @@ __pycache__/
 
 # dataset
 Vehicles_Detection.v8i.yolov8/
+Vehicles_Detection.v9i.yolov8/
 Apply_Grayscale/
 No_Apply_Grayscale/
 
