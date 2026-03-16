@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# dataset
+Vehicles_Detection.v8i.yolov8/
+Apply_Grayscale/
+No_Apply_Grayscale/
+
+# training outputs
+runs/
+
+# model weights
+*.pt
