@@ -59,7 +59,7 @@ Training for more epochs led to a substantial improvement in overall detection p
 ## Current Progress
 - [x] Dataset prepared
 - [x] YOLOv8n baseline trained for 20 epochs
-- [ ] 50-epoch experiment
+- [x] 50-epoch experiment
 - [ ] Model comparison
 - [ ] Grayscale vs RGB comparison
 - [ ] Video inference demo
